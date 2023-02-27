@@ -19,3 +19,15 @@ def Fibonacci(valor_inicial):
 while True:
   valor_inicial = int(input("Digite um valor: "))  
   Fibonacci(valor_inicial)
+
+
+
+
+### Foi criada uma função que recebe o valor digitado pelo usuário. 
+### Dentro da função são criadas 4 variáveis locais de controle.
+### V1 e V2 representam os dois números da sequência de Fibonacci.
+### V3 é utilizado para armazenar o resultado da soma entre V1 e V2, que são atualizados a cada ciclo.
+### A função se repete até que o número de ciclos seja igual ao valor digitado pelo usuário.
+### Se em algum ciclo o valor de VR corresponder aos números da sequência de Fibonacci a mensagem de match é emitida e a função é encerrada com break.
+### Caso o número de ciclos i corresponder ao valor digitado e não houver igualdade entre VR e a sequência, a mensagem de non match é acionada e a função se encerra.
+### Com o comando while True o código entra em loop infinito.
