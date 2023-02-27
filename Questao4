@@ -1,0 +1,17 @@
+faturamento = {
+    "SP": 67836.43,
+    "RJ": 36678.66,
+    "MG": 29229.88,
+    "ES": 27165.4,
+    "outros": 19849.53,
+}
+
+faturamento_total = 0
+
+for valor in faturamento.values():
+    faturamento_total += valor
+
+for valor in faturamento.keys():
+    print(f"Faturamento relativo {valor} %{(faturamento.setdefault(valor)/faturamento_total) * 100}")
+
+print(f"Faturamento total R${faturamento_total}")
