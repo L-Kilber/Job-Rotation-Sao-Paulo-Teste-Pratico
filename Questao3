@@ -1,7 +1,8 @@
 import json
 
 with open("dados.json") as data_jason:
-    data = json.load(data_jason)
+    d
+    = json.load(data_jason)
 
 faturamento_mes = []
 maior_valor_faturamento = 0
@@ -35,5 +36,22 @@ print(f"O maior valor faturado no mês foi: R${maior_valor_faturamento}")
 print(f"O faturamento total no mês foi: R${faturamento_total}")
 print(f"O faturamento médio no mês foi: R${faturamento_medio}")
 print(f"O faturamento diário superou o médio em {dias_maior_faturamento_medio} dias")
+
+
+
+
+
+### Para trabalhar com arquivos JSON é necessário a importação da biblioteca.
+### O arquivo então é carregado dentro da variável DATA.
+### São iniciadas variáveis para armazenar o resultado das operações.
+### O primeiro laço for carrega na lista faturamento_mes os valores contidos dentro do arquivo JSON
+### O comando faturamento_mes.sort() ordena a lista em ordem crescente, facilitando a coleta das informações desejadas.
+### O comando faturamento_mes[-1] é um slice que por ser negativo, pega o último valor da lista ordenada, ou seja, o maior valor numérico.
+### O seguinte laço for percorre toda a lista faturamento_mes adicionando seus valores em faturamento_total, 
+    além disso é verificado o primeiro valor superior a zero na lista e então carregado em menor_valor_faturamento.
+    Uma verificação de alteração (menor_valor_faturamento == 0) é utilizada para carregarmos apenas o primeiro valor maior que 0.
+### O faturamento médio é calculando dividindo o faturamento total pela quantidade de dados dentro da lista len(faturamento_mes)
+### O último laço for verifica toda a lista para somar a quantidade de vezes em quem um faturamento superou o faturamento médio.
+### Por fim as informações são printadas.
 
 
