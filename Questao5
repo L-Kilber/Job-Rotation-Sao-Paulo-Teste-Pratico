@@ -1,0 +1,7 @@
+txt = input("Digite um texto: ")
+print(f"Texto invertido: {txt[::-1]}")
+
+
+### Com o comando slice (:::) é possível modificar a forma como a string é lida.
+### O primeiro argumento representa o inicio da leitura, o segundo argumento representa o final e o terceiro argumento o passo.
+### Como foi utilizado o passo de -1, a leitura ocorre no sentido contrário e o texto escrito é invertido.
