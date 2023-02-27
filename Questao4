@@ -15,3 +15,13 @@ for valor in faturamento.keys():
     print(f"Faturamento relativo {valor} %{(faturamento.setdefault(valor)/faturamento_total) * 100}")
 
 print(f"Faturamento total R${faturamento_total}")
+
+
+
+### Um dicionário (DICT) é criado para conter as informações passadas com uma chave que representa a cidade e um valor referente ao faturamento.
+### O primeiro laço for utiliza o comando faturamento.values() para somar apenas os valores do dicionário.
+### O segundo laço for utiliza o comando faturamento.keys() para verificar os dados por chave.
+    Um print dinâmico é utilizado para minimizar a quantidade de linhas utilizadas.
+    Primeiramente ele receber o nome da cidade ou seja a chave do dado {valor} e em seguida calcula o faturamento percentual relativo em relação ao faturamento total
+### O comando faturamento.setdefault(valor) nos da o valor dentro da chave passada, esse valor é dividido pelo faturamento total e o resultado é multiplicado por 100.
+
